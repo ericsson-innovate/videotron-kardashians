@@ -34,9 +34,12 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
 </head>
 
 <body>
+
+
 
 <!-------------------------------------------
 FULLSCREEN BACKGROUND VIDEO
@@ -50,19 +53,17 @@ FULLSCREEN BACKGROUND VIDEO
 
 </div>
 
-
-
 <!-------------------------------------------
 FULLSCREEN MODAL VIDEO
 -------------------------------------------->
-<div class="modal modal-fullscreen fade" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal modal-fullscreen fade highlighsVideo" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
                 <div class="fullscreen-modal-video">
                     <div class="embed-responsive embed-responsive-16by9">
                         <video id="video1" controls>
-                            <source src="video/pan_movie.mp4" type="video/mp4">
+                            <source src="video/mff_nhl_demo.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -109,7 +110,7 @@ INCOMING MESSAGE MODAL
 <div id="welcome-message">
     <div class="row top-menubar invisible">
         <div class="col-lg-3 col-lg-9">
-            <span id="welcome-time">6:00</span> | Salut William
+            <span id="welcome-time">6:00</span> | BONJOUR MAXIME
         </div>
         <!--
         <div class="col-lg-1 col-lg-offset-11 spotify-section">
@@ -121,7 +122,7 @@ INCOMING MESSAGE MODAL
 
 
 <!-------------------------------------------
-STANDBY SCREEN
+SLEEP SCREEN
 -------------------------------------------->
 <div id="first" class="fadeout">
     <!-- Page Content -->
@@ -143,17 +144,32 @@ STANDBY SCREEN
                 </div>
 
                 <div class="col-lg-6">
-                    <div class="userWrapper">
-                        <ul>
-                            <li>JULIETTE</li>
-                            <li>THEO</li>
-                            <li class="highlight">WILLIAM</li>
-                            <li>PALOMA</li>
-                        </ul>
+                    <div id="standby-time" class="standby_time">
+                        <div id="currentTime">13:52</div>
+                    </div>
+                    <div id="standby-alarm-events" class="standby_alarm_events">
+                        <div id="coffee_brewing_status">
+                                <ul class="icon-coffee fadeout">
+                                    <li class="">Caf&eacute;</li>
+                                </ul>
+                            </div>
+                        <div id="blinds_status">
+                            <ul class="icon-blinds fadeout">
+                                <li class="">Stores</li>
+                            </ul>
+                        </div>
+                        <div id="spotify-playing-status">
+                            <ul class="icon-spotify fadeout">
+                                <li class="">Spotify</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
+
+
     </div>
 </div>
 
@@ -183,7 +199,7 @@ DASHBOARD - AGENDA
 
                 <div class="col-lg-6">
                     <div id="agenda-title" class="agenda_title">
-                        REMINDERS
+                        AGENDA
                     </div>
 
                     <div id="marqueecontainer" onMouseover="" onMouseout="copyspeed=marqueespeed">
@@ -193,28 +209,35 @@ DASHBOARD - AGENDA
 
                             <ul>
                                 <li>
-                                    <!-- <span class="agenda-time"><span class="invisible">0</span>9:00</span> -->
-                                    <span class="agenda-description"> MOM IN PARIS</span>
+                                    <span class="agenda-time"><span class="invisible">0</span>9:00</span>
+                                    <span class="agenda-description"> R&Eacute;UNION CAF&Eacute;</span>
+                                </li>
+                                <li>
+                                    <span class="agenda-time">10:00</span>
+                                    <span class="agenda-description"> APPEL CONF&Eacute;RENCE</span>
+                                </li>
+                                <li>
+                                    <span class="agenda-time">12:00</span>
+                                    <span class="agenda-description"> LUNCH AU RESTAURANT</span>
+                                </li>
+                                <li>
+                                    <span class="agenda-time">14:00</span>
+                                    <span class="agenda-description"> APPEL CONF&Eacute;RENCE</span>
+                                </li>
+                                <li>
+                                    <span class="agenda-time">16:00</span>
+                                    <span class="agenda-description"> APPEL CONF&Eacute;RENCE</span>
                                 </li>
                                 <li>
                                     <span class="agenda-time">17:00</span>
-                                    <span class="agenda-description"> HOCKEY PRACTICE</span>
+                                    <span class="agenda-description"> ENTRA&Icirc;NEMENT TENNIS</span>
+                                </li>
+                                <li><span class="agenda-time">19:00</span>
+                                    <span class="agenda-description"> 5 &Aacute; 7 DANS LE VIEUX</span>
                                 </li>
                                 <li>
-                                    <div class="notification-wrapper">
-                                        <div class="notification-icon"><img src="img/mail_Icon_alert.png" alt=""></div>
-                                        <div class="notification-message">
-                                            From Mom: <br>Don't forget gear for hockey
-                                        </div>    
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="notification-wrapper">
-                                        <div class="notification-icon"><img src="img/battery_empty_alert.png" alt=""></div>
-                                        <div class="notification-message">
-                                            Phone battery is at 20%<br>Charge phone
-                                        </div>    
-                                    </div>
+                                    <span class="agenda-time">22:00</span>
+                                    <span class="agenda-description"> APPEL INTERNATIONAL</span>
                                 </li>
                             </ul>
 
@@ -262,7 +285,7 @@ MEDIA FIRST GENERATION X
                 <div id="cover2"  class="cover-item">
                     <div class="overlay"></div>
                     <div class="metadata">EN DIRECT | TVA - CANOE</div>
-                    <div class="title">CIRCULATION ET CONDITIONS ROUTI&Egrave;RES</div>
+                    <div class="title">CIRCULATION ET CONDITIONS M&Eacute;T&Eacute;O</div>
                     <video loop muted autoplay poster="" class="cover-video">
                         <source src="videos/snow_path_walker_vertical.mp4" type="video/mp4">
                     </video>
@@ -307,6 +330,7 @@ MEDIA FIRST GENERATION X
                     </div>
                 </div>
 
+                <!--
                 <div id="cover7"  class="cover-item">
                     <div class="overlay"></div>
                 </div>
@@ -322,6 +346,7 @@ MEDIA FIRST GENERATION X
                 <div id="cover10" class="cover-item last-cover">
                     <div class="overlay"></div>
                 </div>
+                -->
                 <!-- END PANEL -->
             </div>
         </div>

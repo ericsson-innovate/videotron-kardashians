@@ -9,7 +9,7 @@ function init(){
     audio = $('#audio');
 
     playlist = [
-        "sounds/spotify/song1.mp3",
+        "sounds/spotify/song1.mp3"
         /*
         "sounds/spotify/song2.mp3",
         "sounds/spotify/song3.mp3",

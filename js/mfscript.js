@@ -11,7 +11,7 @@ var tesla_status = 88;
 var t_tesla;//charging interval
 
 function MQTTconnect() {
-    mqtt = new Paho.MQTT.Client("52.207.31.245", 9001, "client-teen-MF-X-1");
+    mqtt = new Paho.MQTT.Client("52.207.31.245", 9001, "gClientMAX-AWS-6-2017");
 
     mqtt.onConnectionLost = onConnectionLost;
     mqtt.onMessageArrived = onMessageArrived;
@@ -51,7 +51,7 @@ function onConnect() {
 
 function onConnectionLost(response) {
     console.log("Connection Lost", response);
-    setTimeout(MQTTconnect, 2000);
+    setTimeout(MQTTconnect, 5000);
 
 };
 
@@ -125,7 +125,7 @@ function onMessageArrived(message) {
     else if (topic == "/vsmarthome/notify/highlights") {
         console.log("highlights, payload");
         //change the source to the requested game event
-        $('#modal-fullscreen video source').attr('src', "video/habs.mp4");
+        $('#modal-fullscreen video source').attr('src', "video/mff_nhl_demo.mp4");
         $("#modal-fullscreen video")[0].load();
         $('#modal-fullscreen').modal('show');
 

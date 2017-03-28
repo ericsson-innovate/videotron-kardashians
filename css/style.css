@@ -276,4 +276,18 @@ FULLSCREEN VIDEO
         width: 1920px;/*original 1170px*/
     }
 }
+.highlighsVideo.modal-fullscreen {
+    background: #000;
+}
+
+.highlighsVideo .fullscreen-modal-video{
+    width: 150%;
+}
+
+.highlighsVideo .fullscreen-modal-video {
+    margin: 260px 0 0 -400px;
+}
+.highlighsVideo .modal-body {
+    padding: 0px;
+}
 
