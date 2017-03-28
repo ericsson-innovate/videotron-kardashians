@@ -31,7 +31,9 @@ When removing the fadout class, transition the second screen slowing into opacit
     width: 0px;  /* remove scrollbar space */
 // background: transparent;  /* optional: just make scrollbar invisible */
 }
-
+/*------------------------------------------------
+AGENDA
+ ------------------------------------------------*/
 #second .agenda-container {
     height: 1500px;
     width: 100%;
@@ -100,7 +102,15 @@ When removing the fadout class, transition the second screen slowing into opacit
     font-size: 2em;
     line-height: 1.95em;
 }
-
+#second #marqueecontainer.agendaContent .nextDay{
+    opacity: .6;
+    position: relative;
+    top: -75px;
+    line-height: 1.25;
+}
+#second #marqueecontainer.agendaContent {
+    height: 1270px;
+}
 
 #second .agenda-container .agenda-date{
     opacity: 1;
@@ -111,8 +121,12 @@ When removing the fadout class, transition the second screen slowing into opacit
     opacity: 0;
     transition: none;
 }
+#second .agenda-container .today .agenda-time, #second .agenda-container .today  .agenda-description { 
+    font-size: 1em;
+     font-family: "Lato Light";
+}
 
-#second .agenda-container .agenda-time {
+#second .agenda-container .agenda-time, #second .agenda-container .agenda-day  {
     font-size: 0.7em;
     font-family: "Lato Light";
 }

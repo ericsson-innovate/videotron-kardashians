@@ -110,7 +110,7 @@ INCOMING MESSAGE MODAL
 <div id="welcome-message">
     <div class="row top-menubar invisible">
         <div class="col-lg-3 col-lg-9">
-            <span id="welcome-time">6:00</span> | BONJOUR MAXIME
+            <span id="welcome-time">6:00</span> | BONJOUR CAMILLE
         </div>
         <!--
         <div class="col-lg-1 col-lg-offset-11 spotify-section">
@@ -202,15 +202,33 @@ DASHBOARD - AGENDA
                         AGENDA
                     </div>
 
-                    <div id="marqueecontainer" onMouseover="" onMouseout="copyspeed=marqueespeed">
+                    <div id="marqueecontainer" class="agendaContent" onMouseover="" onMouseout="copyspeed=marqueespeed">
                         <div id="vmarquee" style="position: absolute; width: 98%;">
 
                             <!--YOUR SCROLL CONTENT HERE-->
 
-                            <ul>
+                            <ul class="today">
                                 <li>
-                                    <span class="agenda-time"><span class="invisible">0</span>9:00</span>
-                                    <span class="agenda-description"> R&Eacute;UNION CAF&Eacute;</span>
+                                    <span class="agenda-time">19:00</span>
+                                    <span class="agenda-description"> Girl's Night</span>
+                                </li>
+                                <li>
+                                    <span class="agenda-time">19:30</span>
+                                    <span class="agenda-description"> KUWTK</span>
+                                </li>
+                                <li>
+                                    <span class="agenda-time today">19:30</span>
+                                    <span class="agenda-description"> DET@MTL</span>
+                                </li>
+                            </ul>
+            
+                            <ul  class="nextDay">
+                                <li>
+                                    <span class="agenda-day">MERCREDI</span>
+                                </li>
+                                <li>
+                                    <span class="agenda-time">7:00</span>
+                                    <span class="agenda-description"> PILATES</span>
                                 </li>
                                 <li>
                                     <span class="agenda-time">10:00</span>
@@ -218,26 +236,14 @@ DASHBOARD - AGENDA
                                 </li>
                                 <li>
                                     <span class="agenda-time">12:00</span>
-                                    <span class="agenda-description"> LUNCH AU RESTAURANT</span>
+                                    <span class="agenda-description">&#60;LUNCH AT RESTAURANT&#62;</span>
                                 </li>
-                                <li>
-                                    <span class="agenda-time">14:00</span>
-                                    <span class="agenda-description"> APPEL CONF&Eacute;RENCE</span>
-                                </li>
-                                <li>
-                                    <span class="agenda-time">16:00</span>
+                                <li><span class="agenda-time">14:00</span>
                                     <span class="agenda-description"> APPEL CONF&Eacute;RENCE</span>
                                 </li>
                                 <li>
                                     <span class="agenda-time">17:00</span>
-                                    <span class="agenda-description"> ENTRA&Icirc;NEMENT TENNIS</span>
-                                </li>
-                                <li><span class="agenda-time">19:00</span>
-                                    <span class="agenda-description"> 5 &Aacute; 7 DANS LE VIEUX</span>
-                                </li>
-                                <li>
-                                    <span class="agenda-time">22:00</span>
-                                    <span class="agenda-description"> APPEL INTERNATIONAL</span>
+                                    <span class="agenda-description"> &#60;FITNESS THING&#62;</span>
                                 </li>
                             </ul>
 

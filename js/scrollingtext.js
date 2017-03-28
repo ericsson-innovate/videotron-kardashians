@@ -28,7 +28,7 @@ function initializemarquee(){
         cross_marquee.style.overflow="scroll"
         return
     }
-    setTimeout('lefttime=setInterval("scrollmarquee()",30)', delayb4scroll)
+    setTimeout('lefttime=setInterval("scrollmarquee()",60000000)', delayb4scroll)
 }
 
 if (window.addEventListener)
